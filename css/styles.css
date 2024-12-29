@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    margin: 20px 0;
+    font-size: 2.5em;
+    color: #00adb5;
+}
+
+.keyboard-selector {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+#keyboard-type {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #222831;
+    color: #00adb5;
+    outline: none;
+}
+
+.keyboard-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.keyboard {
+    background-color: #393e46;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.keyboard h2 {
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    color: #eeeeee;
+    text-align: center;
+}
+
+.keys {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+
+button {
+    background-color: #222831;
+    color: #eeeeee;
+    border: 2px solid #222831;
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button:active {
+    transform: scale(0.95);
+    background-color: #00adb5;
+    color: #1e1e1e;
+}
+
+
+button[data-key="SPACE"] {
+    width: 300px;
+}
+
+button[data-key="TAB"],
+button[data-key="CAPS"],
+button[data-key="SHIFT"],
+button[data-key="CTRL"],
+button[data-key="WIN"],
+button[data-key="ALT"],
+button[data-key="ENTER"],
+button[data-key="BACKSPACE"] {
+    width: 80px;
+}
+
+button:hover {
+    background-color: #00adb5;
+    color: #1e1e1e;
+}
+
+.keyboard.full {
+    display: none;
+}
