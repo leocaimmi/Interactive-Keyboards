@@ -17,7 +17,7 @@ Para usar este proyecto, solo necesitas un navegador moderno. No requiere instal
 1. Clona el repositorio:
 
     ```bash
-    git clone https://github.com/tuusuario/teclado-interactivo.git
+    https://github.com/leocaimmi/Interactive-Keyboards.git
     ```
 
 2. Abre el archivo `index.html` en tu navegador para ver el teclado interactivo en acción.
